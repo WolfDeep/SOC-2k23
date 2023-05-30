@@ -1,0 +1,91 @@
+1.) Name of students
+Zhang
+Shankar
+Brandt
+Chavez
+Peltier
+Levy
+Williams
+Sanchez
+Snow
+Brown
+Aoi
+Bourikas
+Tanaka
+
+name of instructor:
+Srinivasan
+Wu
+Mozart
+Einstein
+El Said
+Gold
+Katz
+Califieri
+Singh
+Crick
+Brandt
+Kim
+
+2.) course_id	title                
+BIO-101	Intro. to Biology
+BIO-301	Genetics
+BIO-399	Computational Biology
+CS-101	Intro. to Computer Science
+CS-190	Game Design
+CS-315	Robotics
+CS-319	Image Processing
+CS-347	Database System Concepts
+EE-181	Intro. to Digital Systems
+FIN-201	Investment Banking
+HIS-351	World History
+MU-199	Music Video Production
+PHY-101	Physical Principles
+
+3.)id	name
+10101	Srinivasan
+15151	Mozart
+32343	El Said
+58583	Califieri
+76766	Crick
+
+4.) count
+12
+
+7.)dept_name
+Finance
+Physics
+Comp. Sci.
+History
+Biology
+Elec. Eng.
+
+11.)name	id
+Zhang	128
+Shankar	12345
+Brandt	19991
+Chavez	23121
+Peltier	44553
+Levy	45678
+Williams	54321
+Sanchez	55739
+Brown	76543
+Aoi	76653
+Bourikas	98765
+Tanaka	98988
+
+
+10.) No such student
+
+15.)SELECT COUNT(DISTINCT ID) AS student_count
+FROM student
+WHERE dept_name IN (
+  SELECT dept_name
+  FROM instructor
+  WHERE ID = 222222 :: varchar 
+);
+
+
+
+
+
